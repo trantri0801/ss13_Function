@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function change() {
+        let array = [];
+        let m = prompt("Nhập vào số phần tử của mảng ");
+        for (let i = 0; i < m; i++ ){
+            do {
+                var dem = prompt("Nhập vào phần tử của mảng");
+            } while (isNaN(dem) || dem == "");
+            array.push(dem);
+        }
+            array.reverse().join();
+            alert(array);
+    }
+    change();
+</script>
+</html>

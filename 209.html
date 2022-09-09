@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function seach(array,i) {
+        let count = 0;
+        for (let x = 0; x < array.length; x++){
+            if (i === array[x]){
+                count++;
+            }
+        }
+        if (count > 0){
+            alert('Số lần xuất hiện của phần tử : ' + count);
+        } else
+            alert(-1);
+    }
+    seach(['v','s','d','w','c','s','w','e','g','v','a','w','g','x','b','n','j','h','y','t','r','e'],'e');
+</script>
+</html>

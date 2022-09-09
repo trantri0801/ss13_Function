@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" onclick="call()" value="Gọi hàm">
+</body>
+<script>
+    function call(x,y) {
+        x = prompt("Nhập vào tham số thứ nhất ");
+        y = prompt("Nhập vào tham số thứ hai ");
+        if (x > y){
+            alert("X lớn hơn Y ");
+        } else
+        {
+            let sum = parseInt(x) + parseInt(y);
+            alert(sum);
+        }
+    }
+</script>
+</html>

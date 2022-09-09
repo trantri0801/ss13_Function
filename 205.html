@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function check(x,y,z) {
+        x = prompt("Nhập vào số nguyên x");
+        y = prompt("Nhập vào số nguyên y");
+        z = prompt("Nhập vào số nguyên z");
+        if (x < y && x < z){
+            alert("X là số nhỏ nhất " + x);
+        } else if (y < x && y < z) {
+            alert("y là số nhỏ nhất " + y);
+        } else if (z < x && z < y){
+            alert("z là số nhỏ nhất " + z);
+        }
+    }
+    check();
+</script>
+</html>

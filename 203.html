@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="button" onclick="GT()" value="Gọi hàm">
+</body>
+<script>
+    function GT() {
+        do {
+            var n = prompt("Nhập vào số để tính giai thừa");
+        } while (isNaN(n) || n === "");
+        n = parseInt(n);
+        var sum = 1;
+        for (; n > 1; n--) {
+             sum = sum * n;
+        }
+        alert(sum);
+    }
+</script>
+</html>

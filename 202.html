@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="button" onclick="Scircle()" value="Diện tích">
+    <input type="button" onclick="Ccircle()" value="Chu vi">
+</body>
+<script>
+    let x = prompt("Nhập vào bán kính hình tròn");
+    function Scircle() {
+        let S = x * x * 3.14;
+        alert(S);
+    }
+    function Ccircle() {
+        let C = 2 * x * 3.14;
+        alert(C);
+    }
+</script>
+</html>

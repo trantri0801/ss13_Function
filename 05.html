@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="seach">
+    <input type="button" onclick="find()" value="Tìm"></button>
+</body>
+<script>
+    function find() {
+        array1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        array2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
+        let save = document.getElementById("seach").value;
+        let count = 0;
+        let y;
+        for (let x = 0; x < array1.length; x++) {
+            if (save === array1[x]) {
+                y = x;
+                count++;
+            }
+        }
+        if (count > 0) {
+            alert(array2[y]);
+        } else
+            alert('Không tìm thấy');
+    }
+</script>
+</html>
